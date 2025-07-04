@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HOMOS Learn 📚</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>👋 أهلاً بيك في HOMOS Learn</h1>
+    <p>شرح الدروس بطريقة جديدة تمامًا 🎯</p>
+  </header>
+
+  <main>
+    <label>📸 ارفع صورة الدرس</label>
+    <input type="file" id="imageInput" accept="image/*" />
+
+    <label>💡 اختار طريقة المساعدة</label>
+    <select id="modeSelect">
+      <option value="summary">✍️ تلخيص الدرس</option>
+      <option value="simple">🧠 تبسيط بالعامية</option>
+      <option value="questions">❓ أسئلة مراجعة</option>
+      <option value="audio">🔊 تحويل إلى صوت</option>
+    </select>
+
+    <button onclick="processImage()">ابدأ المعالجة</button>
+
+    <div id="resultText"></div>
+  </main>
+
+  <section id="premium">
+    <h2>🚀 اشترك في بريميوم</h2>
+    <p>استمتع بكل المميزات: التبسيط بالعامية + الصوت + الأسئلة بلا حدود</p>
+    <button onclick="subscribe('monthly')">💰 اشتراك شهري (25 جنيه)</button>
+    <button onclick="subscribe('yearly')">💎 اشتراك سنوي (200 جنيه)</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
